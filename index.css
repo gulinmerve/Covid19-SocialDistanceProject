@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Navbar Section */
+  .navbar-container {
+    background: linear-gradient(to right, #DD4245, #FDC89E);
+  }
+  
+  #navbar {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar ul li a {
+    padding: 0.5rem;
+  }
+  
+  #navbar ul li a:hover {
+    background: #C5393A;
+    border-radius: 3px;
+    #862020
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Home Section */
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  #home img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  #home .name h2 {
+    margin-bottom: 0.5rem;
+  }
+  #home .name p {
+    opacity: 0.8;
+    font-style: italic;
+    margin-bottom: 0.5rem ;
+  }
+  .button-primary {
+    padding: 0.5rem;
+    background: #A9C6ED;
+    color: white;
+    border: 2px solid #A9C6ED;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  
+  .button-primary:hover {
+    color: #F9B893;
+    background: black;
+    border: 1px solid #525a61;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  /* Services */
+  
+  .header-medium {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+  }
+  #services {
+    color: #fff;
+    padding: 1rem;
+  }
+  #services .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #services .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #services .items .item:hover {
+    color: black;
+    opacity: 0.6;
+    font-weight: bold;
+  }
+  /* Courses */
+  
+  .header-training {
+    margin-top:1rem;
+    margin-left:1.8rem;
+  }
+  
+  #courses {
+    color: #333;
+    padding: 1rem;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .courses .course {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .courses .course .course-image {
+    margin-right: 0.5rem;
+    position: relative;
+  }
+  .courses .course .course-image img {
+    border-radius: 5px;
+  }
+  .courses .course .course-image span {
+    background: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  .courses .course .course-info .title {
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .courses .course .course-info .description {
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+  }
+  
+  
+  /* Contact */
+  
+  #contact {
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  #contact .contact-form {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-contact {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #contact .contact-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  #contact .contact-form ul li a {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  #contact .contact-form ul li a:hover {
+    opacity: 0.7;
+  }
+  
+  /* Buttons */
+  .submit-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  
+  .submit-button:hover {
+    color: #F9B893;
+    background: black;
+    border: 1px solid #525a61;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  
+  /* Forms */
+  
+  .form-group {
+    padding: 0.25rem 0;
+  }
+  .form-group label {
+    display: block;
+    color: white;
+  }
+  .form-control {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0#616161;
+  }
+  
+  @media screen and (max-width:800px) {
+    #navbar {
+      flex-direction: column;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      overflow: hidden;
+      height: 80px;
+    }
+    
+    #services .items {
+      flex-direction: column;
+    }
+    #services .items .item {
+      width: 100%;
+    }
+    .courses .course {
+      flex-direction: column;
+    }
+  }
